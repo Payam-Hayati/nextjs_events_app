@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-200 text-gray-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  img {
+    @apply rounded-lg;
+  }
+
+  nav {
+    @apply bg-gray-900 p-2   text-gray-50 text-center;
+  }
+
+  nav ul li {
+    @apply inline px-4;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-10;
+  }
+
+  .nav ul li {
+    @apply inline px-2 cursor-pointer hover:font-semibold;
+  }
+
+  .my-box {
+    @apply border-gray-400 shadow-2xl p-4 text-gray-900 rounded-lg mt-10 leading-8 text-justify;
+  }
+}
